@@ -1,18 +1,24 @@
-<?php
+<h1>{{ $title}}</h1>
 
-//命名空間
-namespace App\Http\Controllers;
+<div class="social">
+    <a href="">分享到 facebook</a>
+    <a href="">分享到 twitter</a>
+</div>
 
-use App\Http\Controllers\Controller;
+Email:
+<input type="text"
+    name="email"
+    placeholder="Email"
+>
 
-class UserAuthController extends Controller{
-    //註冊頁
-    public function signUpPage(){
-        $binding = [
-            'title' => '註冊',
-        ];
-        return view('auth.signUp', $binding);
-    }
-}
+密碼：
+<input type="password"
+    name="password"
+    placeholder="密碼"
+>
 
-
+簡稱：
+<input type="text"
+    name="nickname"
+    placeholder="暱稱"
+>
